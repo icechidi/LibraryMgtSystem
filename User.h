@@ -5,16 +5,17 @@
 #include <vector>
 #include <algorithm>
 #include <iostream>
+using namespace std;
 
 class User {
-    std::string userID, name;
-    std::vector<std::string> borrowedItems;
+    string userID, name;
+    vector<string> borrowedItems;
 public:
     User();
-    User(std::string id, std::string n);
-    void borrowItem(std::string itemID);
-    void returnItem(std::string itemID);
-    bool hasBorrowed(std::string itemID) const;
+    User(string id, string n);
+    void borrowItem(string itemID);
+    void returnItem(string itemID);
+    bool hasBorrowed(string itemID) const;
     void display() const;
 };
 
