@@ -1,11 +1,13 @@
 #include "Magazine.h"
 #include <iostream>
+using namespace std;
 
-Magazine::Magazine(std::string t, std::string a, std::string id)
-    : LibraryItem(t, a, id) {}
+Magazine::Magazine(string t, string a, string id) : LibraryItem(t, a, id) {}
 
 void Magazine::display() const {
-    std::cout << "[Magazine] ID: " << itemID << ", Title: " << title << ", Author: " << author << std::endl;
+    cout << "[Magazine] ID: " << itemID << ", Title: " << title << ", Author: " << author << endl;
 }
 
-bool Magazine::isBorrowable() const { return false; }
+bool Magazine::isBorrowable() const {
+    return false;
+}

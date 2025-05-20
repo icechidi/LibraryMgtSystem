@@ -5,7 +5,7 @@
 
 class Magazine : public LibraryItem {
 public:
-    Magazine(std::string t, std::string a, std::string id);
+    Magazine(string t, string a, string id);
     void display() const override;
     bool isBorrowable() const override;
 };
